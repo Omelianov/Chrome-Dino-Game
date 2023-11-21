@@ -1,0 +1,57 @@
+.game {
+ width: 600px;
+ height: 200px;
+ border-bottom: 1px solid black;
+ margin: auto;
+}
+
+#leha {
+ width: 50px;
+ height: 50px;
+ background-image: url(img/boy-transparent-16.png);
+ background-size: 50px 50px;
+ position: relative;
+ top: 150px;
+}
+
+#vacuum {
+ width: 40px;
+ height: 20px;
+ background-image: url(img/png-transparent-robotic-vacuum-cleaner-roomba-irobot-robot-electronics-vacuum-cleaner-cleaning.png);
+ background-size: 40px 20px;
+ position: relative;
+ top: 130px;
+ left: 580px;
+ animation: vacuumMove 1s infinite linear;
+}
+
+@keyframes vacuumMove {
+ 0% {
+  left: 590px;
+ }
+ 100% {
+  left: -40px;
+ }
+}
+
+.jump {
+ animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+ 0% {
+  top: 150px;
+ }
+ 30% {
+  top: 130px;
+ }
+ 50% {
+  top: 120px;
+ }
+ 80% {
+  top: 110px;
+ }
+ 100% {
+  top: 100px;
+ }
+}
